@@ -1,0 +1,5 @@
+
+*.baml
+LRSTools/obj/Debug/LRSTools_MarkupCompile.lref
+LRSTools/obj/Debug/LRSTools_MarkupCompile.cache
+LRSTools/obj/Debug/LRSTools.csproj.CoreCompileInputs.cache

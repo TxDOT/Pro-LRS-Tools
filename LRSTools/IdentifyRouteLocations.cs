@@ -31,8 +31,7 @@ namespace LRSTools
 
         protected override Task OnToolActivateAsync(bool active)
         {
-            System.Diagnostics.Trace.WriteLine("Tool Active");
-            //Console.WriteLine("Tool Active");
+            //System.Diagnostics.Trace.WriteLine("Tool Active");
             return base.OnToolActivateAsync(active);
         }
 
@@ -46,7 +45,6 @@ namespace LRSTools
                 string resultMeasure = "";
 
                 var mv = MapView.Active;
-                Console.WriteLine("start");
 
                 // Get features that intersect geometry object
                 //var features = mv.GetFeatures(geometry);
@@ -84,7 +82,6 @@ namespace LRSTools
                         if (PrevMinMaxShape == null)
                         {
 
-                            Console.WriteLine("PrevMinMaxShapeNull");
                             lyr.SetSelection(RevertSelection);
                             continue;
                             //return null;
@@ -104,7 +101,7 @@ namespace LRSTools
 
                         if (MinMaxShape == null)
                         {
-                            Console.WriteLine("PrevMinMaxShapeNull");
+
                             lyr.SetSelection(RevertSelection);
                             continue;
                             //return null;
