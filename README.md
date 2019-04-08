@@ -10,9 +10,14 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ## Description
-This repository contains a Visual Studio solution which creates an ArcGIS Pro add-in tab with two LRS tools which were included in ArcMap but not ArcGIS Pro. 
+This repository contains an ArcGIS Pro add-in tab with two LRS tools which were included in ArcMap but not ArcGIS Pro. 
 1) Set From/To Measures
 2) Locate Features Along Routes 
+
+If you only wish to use the tools, simply run the EsriAddinX file to install the Add-in.
+
+Also included are the Visual Studio solution and supporting files if you wish to see and/or edit the underlying code.  Stay tuned to this repository as we will be making changes to improve the tools.  Also please offer any suggestions or feedback on improvements or bugs.
+
 
 ![Capture](https://user-images.githubusercontent.com/37301006/55736326-b6764600-59e8-11e9-8ef1-f0bf75329c8c.PNG)
 
