@@ -1,0 +1,46 @@
+﻿<ArcGIS defaultAssembly="LRSTools.dll" defaultNamespace="LRSTools" xmlns="http://schemas.esri.com/DADF/Registry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  <AddInInfo id="{bc3bd09b-4178-4991-8a32-4d91a5d0c15c}" version="1.0" desktopVersion="2.3.15769">
+    <Name>LRSTools</Name>
+    <Description>LRSTools description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>JPHILLI2</Author>
+    <Company>Acme</Company>
+    <Date>2019-04-05 10:01:34 AM, 2019</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <modules>
+    <insertModule id="LRSTools_Module" className="Module1" autoLoad="false" caption="LRS Tools">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="LRSTools_Tab1" caption="LRS Tools">
+          <group refID="LRSTools_Group1" />
+        </tab>
+      </tabs>
+      <groups>
+        <!-- comment this out if you have no controls on the Addin tab to avoid
+              an empty group-->
+        <group id="LRSTools_Group1" appearsOnAddInTab="false">
+          <!-- host controls within groups -->
+          <button refID="LRSTools_SetFromTo_ShowButton" size="large" />
+          <tool refID="LRSTools_IdentifyRouteLocations" size="large" />
+        </group>
+      </groups>
+      <controls>
+        <!-- add your controls here -->
+        <button id="LRSTools_SetFromTo_ShowButton" caption="Set From/To Measures" className="SetFromTo_ShowButton" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonPurple16.png" largeImage="Images\ruler.png">
+          <tooltip heading="Show Dockpane">Show Dockpane<disabledText /></tooltip>
+        </button>
+        <tool id="LRSTools_IdentifyRouteLocations" caption="Identify Route Locations" className="IdentifyRouteLocations" loadOnClick="true" smallImage="pack://application:,,,/ArcGIS.Desktop.Resources;component/Images/GenericButtonRed16.png" largeImage="Images\IDrouteLoc.png" condition="esri_mapping_mapPane">
+          <tooltip heading="Tooltip Heading">Tooltip text<disabledText /></tooltip>
+        </tool>
+      </controls>
+      <dockPanes>
+        <dockPane id="LRSTools_SetFromTo" caption="Set From/To Measures" className="SetFromToViewModel" dock="group" dockWith="esri_core_contentsDockPane">
+          <content className="SetFromToView" />
+        </dockPane>
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>

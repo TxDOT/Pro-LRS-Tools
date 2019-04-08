@@ -1,0 +1,11 @@
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools.csprojAssemblyReference.cache
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\SetFromTo.g.cs
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools_MarkupCompile.cache
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools_MarkupCompile.lref
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\bin\Debug\LRSTools.dll
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\bin\Debug\LRSTools.pdb
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\SetFromTo.baml
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools.g.resources
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools.csproj.CoreCompileInputs.cache
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools.dll
+C:\JNP_local\_PROaddins\LRSTools\LRSTools\obj\Debug\LRSTools.pdb

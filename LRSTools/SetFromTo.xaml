@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="LRSTools.SetFromToView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"   
+             xmlns:ui="clr-namespace:LRSTools"
+             xmlns:extensions="clr-namespace:ArcGIS.Desktop.Extensions;assembly=ArcGIS.Desktop.Extensions"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"
+             d:DataContext="{Binding Path=ui.SetFromToViewModel}">
+     <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <extensions:DesignOnlyResourceDictionary Source="pack://application:,,,/ArcGIS.Desktop.Framework;component\Themes\Default.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid ShowGridLines="False" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Row 0-->
+        <DockPanel Grid.Row="0" Grid.Column="0" KeyboardNavigation.TabNavigation="Local" Height="30">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{DynamicResource Esri_TextBlockDialogHeader}">From</TextBlock>
+        </DockPanel>
+        <DockPanel Grid.Row="0" Grid.Column="2" KeyboardNavigation.TabNavigation="Local" Height="30">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Style="{DynamicResource Esri_TextBlockDialogHeader}">To</TextBlock>
+        </DockPanel>
+
+        <!--Row 1-->
+        <DockPanel Grid.Row="1"  Grid.Column="4" >
+            <Button Grid.Column="0" Width="80" Style="{DynamicResource Esri_Button}" Command="{Binding Path=ApplyMeasures}" >
+                Apply
+            </Button>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" Grid.Column="0">
+            <TextBox Width="60" Height="25" AllowDrop="False" Background="{DynamicResource Esri_BackgroundPressedBrush}" Text="{Binding FromMeasure}"                       
+          Foreground="{DynamicResource Esri_TextMenuBrush}">
+            </TextBox>
+        </DockPanel>
+
+        <DockPanel Grid.Row="1" Grid.Column="2">
+            <TextBox Width="60" Height="25" Background="{DynamicResource Esri_BackgroundPressedBrush}" Text="{Binding ToMeasure}"                      
+          Foreground="{DynamicResource Esri_TextMenuBrush}">
+            </TextBox>
+        </DockPanel>
+
+        <!--Separators-->
+        <DockPanel Grid.Row="2" Grid.Column="1"  Width="10">
+        </DockPanel>
+
+        <DockPanel Grid.Row="2" Grid.Column="3"  Width="10">
+        </DockPanel>
+
+    </Grid>
+
+</UserControl>
